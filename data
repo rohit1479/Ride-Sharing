@@ -1,0 +1,31 @@
+CREATE TABLE USER (
+    userId BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255)  NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    contact VARCHAR(20),
+    username varchar(255) NOT NUll,
+    userpassword VARCHAR(255) NOT NULL
+
+
+);
+
+
+create table offerride(
+offerId  BIGINT AUTO_INCREMENT PRIMARY KEY,
+userid BIGINT,
+rideStartPoint varchar(255),
+rideendPoint varchar(255),
+ridedate varchar(255),
+offerseats BIGINT,
+price BIGINT,
+seatsAvailable BIGINT
+
+);
+
+create table rmo(
+requestId BIGINT AUTO_INCREMENT PRIMARY KEY,
+offerId BIGINT,
+offerUserId BIGINT,
+requestUserId BIGINT
+
+);
