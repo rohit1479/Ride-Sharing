@@ -46,5 +46,4 @@ This project is built using **Java Spring Boot (backend)**, **React (frontend)**
 
 ---
 
-## 🗂️ Project Structure
 
